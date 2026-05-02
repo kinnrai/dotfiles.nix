@@ -1,0 +1,57 @@
+{ pkgs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+    act
+    apfel-llm
+    asciinema
+    atuin
+    bat
+    btop
+    chafa
+    chezmoi
+    chroma
+    cocoapods
+    colima
+    delta
+    docker
+    docker-buildx
+    docker-compose
+    docker-credential-helpers
+    dust
+    eza
+    fastfetch
+    fzf
+    gemini-cli
+    git
+    git-xet
+    gitleaks
+    gnupg
+    httpie
+    kubectl
+    kubernetes-helm
+    lazydocker
+    lazygit
+    mas
+    mihomo
+    mise
+    mkvtoolnix-cli
+    neovim
+    nmap
+    opencode
+    pandoc
+    payload-dumper-go
+    pinentry_mac
+    rsync
+    shellcheck
+    sketchybar
+    smartmontools
+    socat
+    starship
+    tree
+    wget
+    xdg-ninja
+    yazi
+    zoxide
+  ];
+}
