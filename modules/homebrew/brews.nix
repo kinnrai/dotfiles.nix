@@ -1,0 +1,9 @@
+[
+  "apfel"
+  "colima"
+  "felixkratz/formulae/sketchybar"
+  "jundot/omlx/omlx"
+  "lua"
+  "mihomo"
+  "rust"
+]
