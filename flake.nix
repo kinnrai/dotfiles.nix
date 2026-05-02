@@ -12,9 +12,59 @@
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ pkgs.vim
-        ];
+      environment.systemPackages = with pkgs; [
+        act
+        apfel-llm
+        asciinema
+        atuin
+        bat
+        btop
+        chafa
+        chezmoi
+        chroma
+        cocoapods
+        colima
+        delta
+        docker
+        docker-buildx
+        docker-compose
+        docker-credential-helpers
+        dust
+        eza
+        fastfetch
+        fzf
+        gemini-cli
+        git
+        git-xet
+        gitleaks
+        gnupg
+        httpie
+        kubectl
+        kubernetes-helm
+        lazydocker
+        lazygit
+        mas
+        mihomo
+        mise
+        mkvtoolnix-cli
+        neovim
+        nmap
+        opencode
+        pandoc
+        payload-dumper-go
+        pinentry_mac
+        rsync
+        shellcheck
+        sketchybar
+        smartmontools
+        socat
+        starship
+        tree
+        wget
+        xdg-ninja
+        yazi
+        zoxide
+      ];
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
