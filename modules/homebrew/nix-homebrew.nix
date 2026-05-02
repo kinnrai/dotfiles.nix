@@ -1,10 +1,10 @@
-{ config, inputs, ... }:
+{ config, inputs, primaryUser, ... }:
 
 {
   nix-homebrew = {
     enable = true;
     enableRosetta = false;
-    user = "kinnrai";
+    user = primaryUser;
     autoMigrate = true;
     mutableTaps = false;
 

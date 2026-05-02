@@ -64,11 +64,16 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }: {
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
+  let
+    primaryUser = "kinnrai";
+    userHome = "/Users/${primaryUser}";
+  in
+  {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Tomrins-MacBook-Pro
     darwinConfigurations."Tomrins-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit self inputs; };
+      specialArgs = { inherit self inputs primaryUser userHome; };
       modules = [
         nix-homebrew.darwinModules.nix-homebrew
         ./modules/default.nix
