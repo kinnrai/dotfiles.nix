@@ -1,4 +1,4 @@
-{ self, pkgs, ... }:
+{ self, pkgs, primaryUser, ... }:
 
 {
   imports = [
@@ -6,6 +6,10 @@
     ./homebrew/default.nix
     ./homebrew/nix-homebrew.nix
     ./packages.nix
+    ./services/apfel.nix
+    ./services/colima.nix
+    ./services/mihomo.nix
+    ./services/sketchybar.nix
   ];
 
   security.pam.services.sudo_local = {
@@ -28,7 +32,7 @@
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 6;
-  system.primaryUser = "kinnrai";
+  system.primaryUser = primaryUser;
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "aarch64-darwin";
