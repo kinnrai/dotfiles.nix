@@ -12,5 +12,6 @@
 
     brews = import ./brews.nix;
     casks = import ./casks.nix;
+    masApps = import ./mas-apps.nix;
   };
 }
