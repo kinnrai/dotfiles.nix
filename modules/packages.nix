@@ -7,41 +7,58 @@
     asciinema
     atuin
     bat
+    blender
     btop
     chafa
     chezmoi
     chroma
+    claude-code
     cocoapods
     colima
+    codex
     delta
+    discord
     docker
     docker-buildx
     docker-compose
     docker-credential-helpers
+    drawio
     dust
     eza
     fastfetch
     fzf
     gemini-cli
+    github-copilot-cli
     git
     git-xet
     gitleaks
+    google-chrome
     gnupg
     httpie
+    imhex
+    jetbrains.clion
+    jetbrains.goland
+    jetbrains.idea
+    jetbrains.pycharm
+    jetbrains.webstorm
     kubectl
     kubernetes-helm
     lazydocker
     lazygit
+    localsend
     mas
     mihomo
     mise
     mkvtoolnix-cli
+    motrix-next
     neovim
     nmap
+    obsidian
     opencode
     pandoc
     payload-dumper-go
     pinentry_mac
+    qq
     rsync
     shellcheck
     sketchybar
@@ -49,6 +66,7 @@
     socat
     starship
     tree
+    wechat
     wget
     xdg-ninja
     yazi
