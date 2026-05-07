@@ -5,7 +5,7 @@
     onActivation = {
       autoUpdate = false;
       cleanup = "zap";
-      upgrade = false;
+      upgrade = true;
     };
 
     global.autoUpdate = false;
