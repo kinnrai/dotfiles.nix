@@ -5,6 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
@@ -64,7 +66,7 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
   let
     primaryUser = "kinnrai";
     userHome = "/Users/${primaryUser}";
@@ -75,6 +77,7 @@
     darwinConfigurations."Tomrins-MacBook-Pro" = nix-darwin.lib.darwinSystem {
       specialArgs = { inherit self inputs primaryUser userHome; };
       modules = [
+        home-manager.darwinModules.home-manager
         nix-homebrew.darwinModules.nix-homebrew
         ./modules/default.nix
       ];
