@@ -1,8 +1,9 @@
-{ self, pkgs, primaryUser, ... }:
+{ self, pkgs, primaryUser, userHome, ... }:
 
 {
   imports = [
     ./fonts.nix
+    ./home-manager/default.nix
     ./homebrew/default.nix
     ./homebrew/nix-homebrew.nix
     ./packages.nix
@@ -28,6 +29,11 @@
 
   # Allow the nix-darwin fish path to be used as a login shell.
   environment.shells = [ pkgs.fish ];
+
+  users.users.${primaryUser} = {
+    name = primaryUser;
+    home = userHome;
+  };
 
   # Set Git commit hash for darwin-version.
   system.configurationRevision = self.rev or self.dirtyRev or null;
