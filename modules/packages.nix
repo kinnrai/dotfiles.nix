@@ -64,7 +64,6 @@
     sketchybar
     smartmontools
     socat
-    starship
     tree
     wechat
     wget
