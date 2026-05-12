@@ -64,6 +64,18 @@
       url = "github:steipete/homebrew-tap";
       flake = false;
     };
+    fish-async-prompt = {
+      url = "github:acomagu/fish-async-prompt";
+      flake = false;
+    };
+    fish-magic-enter = {
+      url = "github:mattmc3/magic-enter.fish";
+      flake = false;
+    };
+    fish-puffer = {
+      url = "github:nickeb96/puffer-fish";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
