@@ -24,7 +24,6 @@
     docker-credential-helpers
     drawio
     dust
-    eza
     fastfetch
     fzf
     gemini-cli

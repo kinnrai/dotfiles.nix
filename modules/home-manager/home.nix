@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./eza.nix
     ./fish
     ./git.nix
     ./starship.nix
