@@ -5,6 +5,7 @@
     ./fish
     ./git.nix
     ./starship.nix
+    ./zoxide.nix
   ];
 
   # This value determines the Home Manager release that your

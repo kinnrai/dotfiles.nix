@@ -112,7 +112,6 @@
 
       atuin init fish | source
       mise activate fish | source
-      zoxide init fish --cmd cd | source
 
       set -l brew_prefix (brew --prefix)
       if test -d "$brew_prefix/share/fish/completions"
