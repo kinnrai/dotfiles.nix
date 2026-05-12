@@ -69,6 +69,5 @@
     wget
     xdg-ninja
     yazi
-    zoxide
   ];
 }
