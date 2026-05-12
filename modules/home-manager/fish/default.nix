@@ -107,21 +107,8 @@
       '';
     };
 
-    shellInit = ''
-      # Keep Starship out of interactiveShellInit. fish-async-prompt spawns a
-      # non-interactive fish subprocess to render prompt functions, and Home
-      # Manager only runs interactiveShellInit behind `status is-interactive`.
-      # If Starship is initialized there, the async child shell never defines
-      # fish_prompt/fish_right_prompt, which breaks the wrapped prompt path.
-      #
-      # @see https://github.com/acomagu/fish-async-prompt/issues/74
-      # @see https://github.com/acomagu/fish-async-prompt/issues/82
-      starship init fish | source
-    '';
-
     interactiveShellInit = ''
       set -g fish_key_bindings fish_vi_key_bindings
-      set -g fish_transient_prompt 1
 
       atuin init fish | source
       mise activate fish | source

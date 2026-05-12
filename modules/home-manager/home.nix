@@ -4,6 +4,7 @@
   imports = [
     ./fish
     ./git.nix
+    ./starship.nix
   ];
 
   # This value determines the Home Manager release that your
