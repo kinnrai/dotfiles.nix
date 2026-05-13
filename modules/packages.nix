@@ -43,7 +43,6 @@
     kubectl
     kubernetes-helm
     lazydocker
-    lazygit
     localsend
     mas
     mihomo

@@ -5,6 +5,7 @@
     ./eza.nix
     ./fish
     ./git.nix
+    ./lazygit.nix
     ./starship.nix
     ./zoxide.nix
   ];
