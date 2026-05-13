@@ -65,6 +65,22 @@
         "type": "github"
       }
     },
+    "ghostty-cursor-shaders": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1778252515,
+        "narHash": "sha256-G/UIr1bKnxn1AcHl/4FL/jou6b7M2VeREslYVELxdmw=",
+        "owner": "sahaj-b",
+        "repo": "ghostty-cursor-shaders",
+        "rev": "06d4e90fb5410e9c4d0b3131584060adddf89406",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sahaj-b",
+        "repo": "ghostty-cursor-shaders",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -369,6 +385,7 @@
         "fish-async-prompt": "fish-async-prompt",
         "fish-magic-enter": "fish-magic-enter",
         "fish-puffer": "fish-puffer",
+        "ghostty-cursor-shaders": "ghostty-cursor-shaders",
         "home-manager": "home-manager",
         "homebrew-aninsomniacy-motrix-next": "homebrew-aninsomniacy-motrix-next",
         "homebrew-antoniorodr-memo": "homebrew-antoniorodr-memo",

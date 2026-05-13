@@ -18,7 +18,6 @@
   "finalshell"
   "flowvision"
   "font-lxgw-bright"
-  "ghostty"
   "github-copilot-for-xcode"
   "hammerspoon"
   "handbrake-app"
