@@ -4,6 +4,7 @@
   imports = [
     ./eza.nix
     ./fish
+    ./ghostty.nix
     ./git.nix
     ./lazygit.nix
     ./starship.nix
