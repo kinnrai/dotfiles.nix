@@ -21,4 +21,10 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # Enable XDG Base Directory support
+  #
+  # @see https://specifications.freedesktop.org/basedir/latest/
+  xdg.enable = true;
+  home.preferXdgDirectories = true;
 }
