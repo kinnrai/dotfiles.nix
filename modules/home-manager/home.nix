@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./aerospace.nix
     ./eza.nix
     ./fish
     ./ghostty.nix

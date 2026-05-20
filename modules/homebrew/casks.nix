@@ -1,6 +1,5 @@
 [
   "adobe-creative-cloud-cleaner-tool"
-  "aerospace"
   "android-studio"
   "apifox"
   "baidunetdisk"
