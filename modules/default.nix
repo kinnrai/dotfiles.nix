@@ -7,10 +7,6 @@
     ./homebrew/default.nix
     ./homebrew/nix-homebrew.nix
     ./packages.nix
-    ./services/apfel.nix
-    ./services/colima.nix
-    ./services/mihomo.nix
-    ./services/sketchybar.nix
   ];
 
   security.pam.services.sudo_local = {
