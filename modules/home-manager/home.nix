@@ -3,6 +3,7 @@
 {
   imports = [
     ./aerospace.nix
+    ./atuin.nix
     ./eza.nix
     ./fish
     ./ghostty.nix

@@ -5,7 +5,6 @@
     act
     apfel-llm
     asciinema
-    atuin
     bat
     blender
     btop
