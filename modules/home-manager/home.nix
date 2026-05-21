@@ -6,9 +6,12 @@
     ./atuin.nix
     ./eza.nix
     ./fish
+    ./fzf.nix
     ./ghostty.nix
     ./git.nix
     ./lazygit.nix
+    ./mise.nix
+    ./packages.nix
     ./starship.nix
     ./zoxide.nix
   ];

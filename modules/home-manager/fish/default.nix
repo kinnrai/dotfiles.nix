@@ -110,8 +110,6 @@
     interactiveShellInit = ''
       set -g fish_key_bindings fish_vi_key_bindings
 
-      mise activate fish | source
-
       set -l brew_prefix (brew --prefix)
       if test -d "$brew_prefix/share/fish/completions"
           set -p fish_complete_path "$brew_prefix/share/fish/completions"

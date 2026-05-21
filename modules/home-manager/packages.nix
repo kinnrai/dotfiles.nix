@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     act
     apfel-llm
     asciinema
@@ -24,10 +24,8 @@
     drawio
     dust
     fastfetch
-    fzf
     gemini-cli
     github-copilot-cli
-    git
     git-xet
     gitleaks
     google-chrome
@@ -45,7 +43,6 @@
     localsend
     mas
     mihomo
-    mise
     mkvtoolnix-cli
     motrix-next
     neovim

@@ -8,7 +8,6 @@ in
 {
   programs.git = {
     enable = true;
-    package = null;
 
     signing = {
       key = signingKey;

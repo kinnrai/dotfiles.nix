@@ -6,7 +6,6 @@
     ./home-manager/default.nix
     ./homebrew/default.nix
     ./homebrew/nix-homebrew.nix
-    ./packages.nix
   ];
 
   security.pam.services.sudo_local = {
