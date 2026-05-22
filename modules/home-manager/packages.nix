@@ -13,14 +13,9 @@
     chroma
     claude-code
     cocoapods
-    colima
     codex
     delta
     discord
-    docker
-    docker-buildx
-    docker-compose
-    docker-credential-helpers
     drawio
     dust
     fastfetch
@@ -37,7 +32,6 @@
     jetbrains.idea
     jetbrains.pycharm
     jetbrains.webstorm
-    kubectl
     kubernetes-helm
     lazydocker
     localsend
@@ -49,6 +43,7 @@
     nmap
     obsidian
     opencode
+    orbstack
     pandoc
     payload-dumper-go
     pinentry_mac
