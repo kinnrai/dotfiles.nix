@@ -59,6 +59,26 @@
 
     binds = {
       "\\cg".command = "_sgpt_commandline";
+
+      # Keep Aerospace on alt and make autosuggestion acceptance semantic:
+      # right accepts one char, ctrl-f accepts one word, ctrl-n accepts all,
+      # and ctrl-left/right recover prevd/nextd-style navigation.
+      right = {
+        mode = "insert";
+        command = "forward-single-char";
+      };
+      ctrl-f = {
+        mode = "insert";
+        command = "forward-word";
+      };
+      ctrl-right = {
+        mode = "insert";
+        command = "nextd-or-forward-word";
+      };
+      ctrl-left = {
+        mode = "insert";
+        command = "prevd-or-backward-word";
+      };
     };
 
     functions = {
