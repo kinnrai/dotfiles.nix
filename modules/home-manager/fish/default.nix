@@ -119,5 +119,13 @@
           set -p fish_complete_path "$brew_prefix/share/fish/vendor_completions.d"
       end
     '';
+
+    shellInitLast = ''
+      # Atuin rebinds ctrl-r globally after fish_vi_key_bindings loads.
+      # Restore redo in vi normal mode while keeping atuin in insert mode.
+      if test "$fish_key_bindings" = fish_vi_key_bindings
+          bind -M default ctrl-r redo
+      end
+    '';
   };
 }
