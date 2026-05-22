@@ -1,4 +1,4 @@
-{ config, ... }:
+{ lib, pkgs, ... }:
 
 {
   programs.aerospace = {
@@ -9,22 +9,12 @@
     settings = {
       config-version = 2;
 
-      exec.env-vars.PATH = builtins.concatStringsSep ":" [
-        "${config.home.profileDirectory}/bin"
-        "/run/current-system/sw/bin"
-        "/opt/homebrew/bin"
-        "/opt/homebrew/sbin"
-        "\${PATH}"
-      ];
-
-      after-startup-command = [ "exec-and-forget sketchybar" ];
-
       on-mode-changed = [
         ''
           exec-and-forget /bin/bash -lc '
-          mode="$(aerospace list-modes --current 2>/dev/null)"
+          mode="$(${lib.getExe pkgs.aerospace} list-modes --current 2>/dev/null)"
 
-          sketchybar --trigger aerospace_mode_change \
+          ${lib.getExe pkgs.sketchybar} --trigger aerospace_mode_change \
             MODE="$mode"
           '
         ''
@@ -33,11 +23,11 @@
       on-focus-changed = [
         ''
           exec-and-forget /bin/bash -lc '
-          workspace="$(aerospace list-workspaces --focused 2>/dev/null)"
-          window_id="$(aerospace list-windows --focused --format "%{window-id}" 2>/dev/null)"
-          app="$(aerospace list-windows --focused --format "%{app-name}" 2>/dev/null)"
+          workspace="$(${lib.getExe pkgs.aerospace} list-workspaces --focused 2>/dev/null)"
+          window_id="$(${lib.getExe pkgs.aerospace} list-windows --focused --format "%{window-id}" 2>/dev/null)"
+          app="$(${lib.getExe pkgs.aerospace} list-windows --focused --format "%{app-name}" 2>/dev/null)"
 
-          sketchybar --trigger aerospace_focus_change \
+          ${lib.getExe pkgs.sketchybar} --trigger aerospace_focus_change \
             FOCUSED_WORKSPACE="$workspace" \
             FOCUSED_WINDOW_ID="$window_id" \
             FOCUSED_APP="$app"

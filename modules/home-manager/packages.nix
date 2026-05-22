@@ -50,7 +50,6 @@
     qq
     rsync
     shellcheck
-    sketchybar
     smartmontools
     socat
     tree
