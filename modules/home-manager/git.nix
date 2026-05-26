@@ -29,6 +29,10 @@ in
       "Thumbs.db"
       "Desktop.ini"
       "$RECYCLE.BIN/"
+
+      # used for local config
+      ".env.local"
+      "mise.local.toml"
     ];
 
     settings = {
