@@ -20,6 +20,7 @@
     dust
     fastfetch
     gemini-cli
+    gh
     github-copilot-cli
     git-xet
     gitleaks
