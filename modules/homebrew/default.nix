@@ -1,3 +1,5 @@
+{ userHome, ... }:
+
 {
   homebrew = {
     enable = true;
@@ -9,6 +11,8 @@
     };
 
     global.autoUpdate = false;
+
+    caskArgs.appdir = "${userHome}/Applications/Homebrew Apps";
 
     brews = import ./brews.nix;
     casks = import ./casks.nix;
