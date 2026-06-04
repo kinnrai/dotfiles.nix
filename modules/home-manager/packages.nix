@@ -58,5 +58,6 @@
     wget
     xdg-ninja
     yazi
+    zed-editor
   ];
 }
