@@ -16,52 +16,8 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-    homebrew-aninsomniacy-motrix-next = {
-      url = "github:AnInsomniacy/homebrew-motrix-next";
-      flake = false;
-    };
-    homebrew-antoniorodr-memo = {
-      url = "github:antoniorodr/homebrew-memo";
-      flake = false;
-    };
-    homebrew-betterdiscord-tap = {
-      url = "github:betterdiscord/homebrew-tap";
-      flake = false;
-    };
-    homebrew-farion1231-ccswitch = {
-      url = "github:farion1231/homebrew-ccswitch";
-      flake = false;
-    };
-    homebrew-felixkratz-formulae = {
-      url = "github:FelixKratz/homebrew-formulae";
-      flake = false;
-    };
-    homebrew-jundot-omlx = {
-      url = "github:jundot/omlx";
-      flake = false;
-    };
-    homebrew-lihaoyun6-tap = {
-      url = "github:lihaoyun6/homebrew-tap";
-      flake = false;
-    };
-    homebrew-mediosz-tap = {
-      url = "github:mediosz/homebrew-tap";
-      flake = false;
-    };
-    homebrew-nikitabobko-tap = {
-      url = "github:nikitabobko/homebrew-tap";
-      flake = false;
-    };
-    homebrew-productdevbook-tap = {
-      url = "github:productdevbook/homebrew-tap";
-      flake = false;
-    };
     homebrew-rafaelswi-menubarusb = {
       url = "github:rafaelswi/homebrew-menubarusb";
-      flake = false;
-    };
-    homebrew-steipete-tap = {
-      url = "github:steipete/homebrew-tap";
       flake = false;
     };
     fish-async-prompt = {
