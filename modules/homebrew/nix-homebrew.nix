@@ -13,6 +13,10 @@
       "homebrew/homebrew-cask" = inputs.homebrew-cask;
       "rafaelswi/homebrew-menubarusb" = inputs.homebrew-rafaelswi-menubarusb;
     };
+
+    trust = {
+      casks = [ "rafaelswi/menubarusb/menubarusb" ];
+    };
   };
 
   homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
