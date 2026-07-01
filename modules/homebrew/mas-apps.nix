@@ -11,6 +11,7 @@
   "Noir" = 1592917505;
   "Refined GitHub" = 1519867270;
   "Tampermonkey" = 6738342400;
+  "Trancy ET- AI Translator" = 6475386403;
   "Vimlike" = 1584519802;
   "Xcode" = 497799835;
 }
