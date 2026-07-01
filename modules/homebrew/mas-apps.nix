@@ -9,10 +9,8 @@
   "Microsoft PowerPoint" = 462062816;
   "Microsoft Word" = 462054704;
   "Noir" = 1592917505;
-  "Raycast Companion" = 6738274497;
   "Refined GitHub" = 1519867270;
   "Tampermonkey" = 6738342400;
   "Vimlike" = 1584519802;
   "Xcode" = 497799835;
-  "沉浸式翻译" = 6447957425;
 }
