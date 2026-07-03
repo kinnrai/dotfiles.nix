@@ -43,7 +43,6 @@
     neovim
     nmap
     obsidian
-    opencode
     orbstack
     pandoc
     payload-dumper-go
