@@ -17,7 +17,6 @@
   "handbrake-app"
   "hazeover"
   "icon-composer"
-  "keka"
   "kekaexternalhelper"
   "menubarusb"
   "neteasemusic"

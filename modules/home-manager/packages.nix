@@ -35,6 +35,7 @@
     jetbrains.idea
     jetbrains.pycharm
     jetbrains.webstorm
+    keka
     kubernetes-helm
     lazydocker
     localsend
