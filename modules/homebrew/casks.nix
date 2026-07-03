@@ -28,7 +28,6 @@
   "sf-symbols"
   "silicon-app"
   "skim"
-  "stats"
   "steam"
   "syntax-highlight"
   "telegram"

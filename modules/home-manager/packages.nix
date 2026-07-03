@@ -55,6 +55,7 @@
     shellcheck
     smartmontools
     socat
+    stats
     tree
     wechat
     wget
