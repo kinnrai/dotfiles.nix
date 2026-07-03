@@ -6,7 +6,6 @@
   "bluestacks"
   "chatgpt"
   "codex-app"
-  "codexbar"
   "comfy"
   "crossover"
   "es-de"

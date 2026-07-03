@@ -14,6 +14,7 @@
     claude-code
     cocoapods
     codex
+    codexbar
     delta
     discord
     drawio
