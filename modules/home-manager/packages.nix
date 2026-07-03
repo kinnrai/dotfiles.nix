@@ -28,6 +28,7 @@
     google-chrome
     gnupg
     httpie
+    iina
     imhex
     jetbrains.clion
     jetbrains.goland
