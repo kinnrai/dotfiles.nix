@@ -4,12 +4,7 @@
   homebrew = {
     enable = true;
 
-    onActivation = {
-      autoUpdate = false;
-      cleanup = "zap";
-      upgrade = true;
-    };
-
+    onActivation.cleanup = "zap";
     global.autoUpdate = false;
 
     caskArgs.appdir = "${userHome}/Applications/Homebrew Apps";
