@@ -1,6 +1,5 @@
 [
   "android-studio"
-  "apifox"
   "baidunetdisk"
   "blackhole-2ch"
   "bluestacks"

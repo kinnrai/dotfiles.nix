@@ -6,6 +6,8 @@
     apfel-llm
     asciinema
     bat
+    bruno
+    bruno-cli
     blender
     btop
     chafa
