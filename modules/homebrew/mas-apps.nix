@@ -5,6 +5,7 @@
   "Control Panel for YouTube" = 6478456678;
   "CotEditor" = 1024640650;
   "Draw Things" = 6444050820;
+  "Klack" = 6446206067;
   "Microsoft Excel" = 462058435;
   "Microsoft PowerPoint" = 462062816;
   "Microsoft Word" = 462054704;
