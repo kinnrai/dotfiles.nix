@@ -13,7 +13,6 @@
     chafa
     chezmoi
     chroma
-    claude-code
     cocoapods
     codex
     codexbar
@@ -22,7 +21,6 @@
     drawio
     dust
     fastfetch
-    gemini-cli
     gh
     github-copilot-cli
     git-xet
