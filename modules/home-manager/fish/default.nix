@@ -1,43 +1,8 @@
-{ userHome, ... }:
+{ ... }:
 {
   imports = [
     ./plugins.nix
     ./themes.nix
-  ];
-
-  home.sessionVariables = {
-    XDG_CACHE_HOME = "${userHome}/.cache";
-    XDG_CONFIG_HOME = "${userHome}/.config";
-    XDG_DATA_HOME = "${userHome}/.local/share";
-    XDG_STATE_HOME = "${userHome}/.local/state";
-
-    ANDROID_HOME = "${userHome}/Library/Android/sdk";
-    ANDROID_USER_HOME = "${userHome}/.local/share/android";
-    CARGO_HOME = "${userHome}/.local/share/cargo";
-    CP_HOME_DIR = "${userHome}/.local/share/cocoapods";
-    DOCKER_CONFIG = "${userHome}/.config/docker";
-    GOPATH = "${userHome}/.local/share/go";
-    GOCACHE = "${userHome}/.cache/go/cache";
-    GOMODCACHE = "${userHome}/.cache/go/mod";
-    GRADLE_USER_HOME = "${userHome}/.local/share/gradle";
-    KONAN_DATA_DIR = "${userHome}/.local/share/konan";
-    NPM_CONFIG_USERCONFIG = "${userHome}/.config/npm/npmrc";
-    NPM_CONFIG_CACHE = "${userHome}/.cache/npm";
-    PYTHON_HISTORY = "${userHome}/.local/state/python_history";
-    RUSTUP_HOME = "${userHome}/.local/share/rustup";
-
-    SSH_AUTH_SOCK = "${userHome}/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock";
-    MAS_NO_AUTO_INDEX = "1";
-    LANG = "zh_CN.UTF-8";
-    EDITOR = "nvim";
-  };
-
-  home.sessionPath = [
-    "${userHome}/Library/Android/sdk/platform-tools"
-    "${userHome}/.local/share/cargo/bin"
-    "${userHome}/.pub-cache/bin"
-    "${userHome}/.local/share/go/bin"
-    "${userHome}/.local/bin"
   ];
 
   programs.fish = {
