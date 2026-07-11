@@ -12,6 +12,7 @@
     ./lazygit.nix
     ./mise.nix
     ./packages.nix
+    ./paneru.nix
     ./sketchybar.nix
     ./starship.nix
     ./zoxide.nix
