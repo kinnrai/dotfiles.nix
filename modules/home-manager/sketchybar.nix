@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   programs.sketchybar = {
@@ -9,7 +9,10 @@
     # the package wrapper and the launchd agent.
     sbarLuaPackage = pkgs.sbarlua;
 
-    # The current Lua config shells out to AeroSpace.
-    extraPackages = [ pkgs.aerospace ];
+    # The local Lua config queries Paneru virtual workspaces.
+    extraPackages = [
+      pkgs.aerospace
+      inputs.paneru.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ];
   };
 }
