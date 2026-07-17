@@ -9,7 +9,7 @@
     # the package wrapper and the launchd agent.
     sbarLuaPackage = pkgs.sbarlua;
 
-    # The local Lua config queries Paneru virtual workspaces.
+    # The local Lua config queries Paneru and AeroSpace workspaces.
     extraPackages = [
       pkgs.aerospace
       inputs.paneru.packages.${pkgs.stdenv.hostPlatform.system}.default

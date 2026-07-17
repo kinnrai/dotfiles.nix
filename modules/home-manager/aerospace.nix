@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ ... }:
 
 {
   programs.aerospace = {
@@ -9,32 +9,6 @@
 
     settings = {
       config-version = 2;
-
-      on-mode-changed = [
-        ''
-          exec-and-forget /bin/bash -lc '
-          mode="$(${lib.getExe pkgs.aerospace} list-modes --current 2>/dev/null)"
-
-          ${lib.getExe pkgs.sketchybar} --trigger aerospace_mode_change \
-            MODE="$mode"
-          '
-        ''
-      ];
-
-      on-focus-changed = [
-        ''
-          exec-and-forget /bin/bash -lc '
-          workspace="$(${lib.getExe pkgs.aerospace} list-workspaces --focused 2>/dev/null)"
-          window_id="$(${lib.getExe pkgs.aerospace} list-windows --focused --format "%{window-id}" 2>/dev/null)"
-          app="$(${lib.getExe pkgs.aerospace} list-windows --focused --format "%{app-name}" 2>/dev/null)"
-
-          ${lib.getExe pkgs.sketchybar} --trigger aerospace_focus_change \
-            FOCUSED_WORKSPACE="$workspace" \
-            FOCUSED_WINDOW_ID="$window_id" \
-            FOCUSED_APP="$app"
-          '
-        ''
-      ];
 
       on-focused-monitor-changed = [ "move-mouse monitor-lazy-center" ];
 
