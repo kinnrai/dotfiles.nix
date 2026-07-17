@@ -22,11 +22,6 @@
         };
       };
 
-      decorations.inactive.dim = {
-        opacity = -0.5;
-        opacity_night = -0.25;
-      };
-
       bindings = {
         window_focus_west = [ "cmd - h" "cmd - leftarrow" ];
         window_focus_east = [ "cmd - l" "cmd - rightarrow" ];
