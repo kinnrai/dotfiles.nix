@@ -5,7 +5,6 @@
     enable = true;
     enableFishIntegration = true;
 
-    daemon.enable = true;
     forceOverwriteSettings = true;
 
     flags = [ "--disable-up-arrow" ];
@@ -13,6 +12,11 @@
     settings = {
       ctrl_n_shortcuts = true;
       enter_accept = false;
+
+      daemon = {
+        enabled = true;
+        autostart = true;
+      };
 
       keymap_mode = "auto";
       keymap_cursor = {
