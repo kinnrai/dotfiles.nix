@@ -12,6 +12,7 @@
     ./git.nix
     ./lazygit.nix
     ./mise.nix
+    ./nix-index.nix
     ./packages.nix
     ./paneru.nix
     ./sketchybar.nix
