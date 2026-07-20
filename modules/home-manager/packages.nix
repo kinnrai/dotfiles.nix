@@ -44,6 +44,8 @@
     mkvtoolnix-cli
     motrix-next
     neovim
+    nh
+    nixpkgs-review
     nmap
     obsidian
     orbstack
