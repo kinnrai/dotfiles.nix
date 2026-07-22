@@ -23,37 +23,37 @@
       };
 
       bindings = {
-        window_focus_west = [ "cmd - h" "cmd - leftarrow" ];
-        window_focus_east = [ "cmd - l" "cmd - rightarrow" ];
-        window_focus_north = [ "cmd - k" "cmd - uparrow" ];
-        window_focus_south = [ "cmd - j" "cmd - downarrow" ];
+        window_focus_west = [ "alt - h" "alt - leftarrow" ];
+        window_focus_east = [ "alt - l" "alt - rightarrow" ];
+        window_focus_north = [ "alt - k" "alt - uparrow" ];
+        window_focus_south = [ "alt - j" "alt - downarrow" ];
 
-        window_swap_west = [ "cmd + ctrl - h" "cmd + ctrl - leftarrow" ];
-        window_swap_east = [ "cmd + ctrl - l" "cmd + ctrl - rightarrow" ];
-        window_swap_north = [ "cmd + ctrl - k" "cmd + ctrl - uparrow" ];
-        window_swap_south = [ "cmd + ctrl - j" "cmd + ctrl - downarrow" ];
+        window_swap_west = [ "alt + shift - h" "alt + shift - leftarrow" ];
+        window_swap_east = [ "alt + shift - l" "alt + shift - rightarrow" ];
+        window_swap_north = [ "alt + shift - k" "alt + shift - uparrow" ];
+        window_swap_south = [ "alt + shift - j" "alt + shift - downarrow" ];
 
-        window_virtualnum_1 = "cmd - 1";
-        window_virtualnum_2 = "cmd - 2";
-        window_virtualnum_3 = "cmd - 3";
-        window_virtualnum_4 = "cmd - 4";
-        window_virtualnum_5 = "cmd - 5";
-        window_virtualnum_6 = "cmd - 6";
-        window_virtualnum_7 = "cmd - 7";
-        window_virtualnum_8 = "cmd - 8";
-        window_virtualnum_9 = "cmd - 9";
-        window_virtualnum_10 = "cmd - 0";
+        window_virtualnum_1 = "alt - 1";
+        window_virtualnum_2 = "alt - 2";
+        window_virtualnum_3 = "alt - 3";
+        window_virtualnum_4 = "alt - 4";
+        window_virtualnum_5 = "alt - 5";
+        window_virtualnum_6 = "alt - 6";
+        window_virtualnum_7 = "alt - 7";
+        window_virtualnum_8 = "alt - 8";
+        window_virtualnum_9 = "alt - 9";
+        window_virtualnum_10 = "alt - 0";
 
-        window_virtualmovenum_1 = "cmd + ctrl - 1";
-        window_virtualmovenum_2 = "cmd + ctrl - 2";
-        window_virtualmovenum_3 = "cmd + ctrl - 3";
-        window_virtualmovenum_4 = "cmd + ctrl - 4";
-        window_virtualmovenum_5 = "cmd + ctrl - 5";
-        window_virtualmovenum_6 = "cmd + ctrl - 6";
-        window_virtualmovenum_7 = "cmd + ctrl - 7";
-        window_virtualmovenum_8 = "cmd + ctrl - 8";
-        window_virtualmovenum_9 = "cmd + ctrl - 9";
-        window_virtualmovenum_10 = "cmd + ctrl - 0";
+        window_virtualmovenum_1 = "alt + shift - 1";
+        window_virtualmovenum_2 = "alt + shift - 2";
+        window_virtualmovenum_3 = "alt + shift - 3";
+        window_virtualmovenum_4 = "alt + shift - 4";
+        window_virtualmovenum_5 = "alt + shift - 5";
+        window_virtualmovenum_6 = "alt + shift - 6";
+        window_virtualmovenum_7 = "alt + shift - 7";
+        window_virtualmovenum_8 = "alt + shift - 8";
+        window_virtualmovenum_9 = "alt + shift - 9";
+        window_virtualmovenum_10 = "alt + shift - 0";
 
         window_center = "alt - c";
         window_resize = "alt - r";
@@ -62,8 +62,8 @@
         window_stack = "alt - [";
         window_unstack = "alt - ]";
         window_togglefloatlayer = "alt - tab";
-        quit = "cmd + ctrl + shift - q";
-        restart = "cmd + ctrl + shift - r";
+        quit = "alt + shift - q";
+        restart = "alt + shift - r";
       };
 
       windows = {
