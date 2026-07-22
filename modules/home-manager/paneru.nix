@@ -71,6 +71,11 @@
           title = "Picture.*(in)?.*[Pp]icture";
           floating = true;
         };
+        cleanshotx = {
+          title = ".*";
+          bundle_id = "pl.maketheweb.cleanshotx";
+          floating = true;
+        };
         all = {
           title = ".*";
           horizontal_padding = 4;
