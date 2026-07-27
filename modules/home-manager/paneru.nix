@@ -11,7 +11,6 @@
         focus_follows_mouse = false;
         mouse_follows_focus = false;
         animation_speed = 12;
-        mouse_resize_modifier = "alt";
       };
 
       swipe = {
