@@ -64,5 +64,6 @@
     xdg-ninja
     yazi
     zed-editor
+    zsign
   ];
 }
