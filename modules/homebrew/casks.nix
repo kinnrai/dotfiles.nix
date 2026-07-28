@@ -27,6 +27,7 @@
   "sf-symbols"
   "silicon-app"
   "skim"
+  "snapzy"
   "steam"
   "syntax-highlight"
   "telegram"
