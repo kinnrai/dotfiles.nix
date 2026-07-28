@@ -4,7 +4,7 @@
   "blackhole-2ch"
   "bluestacks"
   "chatgpt"
-  "codex-app"
+  "chatgpt-classic"
   "comfy"
   "crossover"
   "es-de"
