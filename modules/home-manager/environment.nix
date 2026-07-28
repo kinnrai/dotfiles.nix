@@ -1,4 +1,4 @@
-{ config, userHome, ... }:
+{ userHome, ... }:
 
 {
   home.language.base = "zh_CN.UTF-8";
@@ -12,8 +12,5 @@
 
   home.sessionPath = [
     "${userHome}/Library/Android/sdk/platform-tools"
-    "${config.xdg.dataHome}/cargo/bin"
-    "${userHome}/.pub-cache/bin"
-    "${config.xdg.dataHome}/go/bin"
   ];
 }

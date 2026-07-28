@@ -52,8 +52,10 @@
     pandoc
     payload-dumper-go
     pinentry_mac
+    python3Packages.huggingface-hub
     qq
     rsync
+    shell-gpt
     shellcheck
     smartmontools
     socat
