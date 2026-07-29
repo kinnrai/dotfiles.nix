@@ -5,6 +5,9 @@ let
     {
       name = "async-prompt";
       src = inputs.fish-async-prompt;
+      # Avoid conflicting with direnv-instant, which uses SIGUSR1 to reload
+      # the shell environment after an asynchronous evaluation.
+      settings.async_prompt_signal_number = "SIGUSR2";
     }
     {
       name = "magic-enter";
