@@ -21,6 +21,7 @@
     ./tmux
     ./toolchains.nix
     ./xdg.nix
+    ./zellij
     ./zoxide.nix
   ];
 

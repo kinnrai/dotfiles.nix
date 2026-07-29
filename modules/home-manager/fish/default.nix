@@ -23,8 +23,6 @@
     };
 
     binds = {
-      "\\cg".command = "_sgpt_commandline";
-
       # Keep Aerospace on alt and make autosuggestion acceptance semantic:
       # right accepts one char, ctrl-f accepts one word, ctrl-n accepts all,
       # and ctrl-left/right recover prevd/nextd-style navigation.
@@ -47,30 +45,6 @@
     };
 
     functions = {
-      "_sgpt_commandline" = {
-        description = "Use the current command line as an sgpt shell prompt and replace it with the generated command";
-        body = ''
-          set -l _sgpt_prompt (commandline)
-
-          if test -z "$_sgpt_prompt"
-              return
-          end
-
-          commandline -a "⌛"
-          commandline -f end-of-line
-
-          set -l _sgpt_output (echo "$_sgpt_prompt" | sgpt --shell --no-interaction)
-
-          if test $status -eq 0
-              commandline -r -- (string trim "$_sgpt_output")
-              commandline -a "  # $_sgpt_prompt"
-          else
-              commandline -f backward-delete-char
-              commandline -a "  # ERROR: sgpt command failed"
-          end
-        '';
-      };
-
       y = {
         description = "A shell wrapper that provides the ability to change the current working directory when exiting Yazi";
         body = ''
