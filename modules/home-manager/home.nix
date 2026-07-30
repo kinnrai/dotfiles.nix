@@ -18,6 +18,7 @@
     ./paneru.nix
     ./sketchybar.nix
     ./starship.nix
+    ./tmux
     ./toolchains.nix
     ./xdg.nix
     ./zoxide.nix
