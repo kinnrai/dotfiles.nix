@@ -20,6 +20,7 @@
     ./sketchybar.nix
     ./starship.nix
     ./tmux
+    ./yazi
     ./toolchains.nix
     ./xdg.nix
     ./zellij

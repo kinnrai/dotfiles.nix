@@ -375,7 +375,8 @@
         "nix-homebrew": "nix-homebrew",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
-        "paneru": "paneru"
+        "paneru": "paneru",
+        "yazi-flavors": "yazi-flavors"
       }
     },
     "treefmt-nix": {
@@ -396,6 +397,22 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "yazi-flavors": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785237721,
+        "narHash": "sha256-rEoCpbb1wmvzJJXtQ6dDkBIUw/W3VWwJGBkjWhYTgYk=",
+        "owner": "yazi-rs",
+        "repo": "flavors",
+        "rev": "1a5f7877c770ff4db380b0b78e0e1a2cb4206103",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yazi-rs",
+        "repo": "flavors",
         "type": "github"
       }
     }

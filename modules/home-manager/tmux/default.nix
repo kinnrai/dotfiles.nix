@@ -93,6 +93,12 @@ in
       set -g set-titles on
       set -g set-titles-string "#S:#I.#P #W"
 
+      # Let terminal applications such as Yazi pass image protocols through
+      # tmux, and preserve the variables used to detect Ghostty.
+      set -g allow-passthrough on
+      set -ga update-environment TERM
+      set -ga update-environment TERM_PROGRAM
+
       # Keep Ctrl-b as the portable primary prefix and add Ctrl-a as an
       # ergonomic alternative. Pressing Ctrl-a twice sends a literal Ctrl-a
       # to applications such as shells and terminal UIs.

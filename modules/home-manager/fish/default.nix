@@ -45,20 +45,6 @@
       };
     };
 
-    functions = {
-      y = {
-        description = "A shell wrapper that provides the ability to change the current working directory when exiting Yazi";
-        body = ''
-          set tmp (mktemp -t "yazi-cwd.XXXXXX")
-          command yazi $argv --cwd-file="$tmp"
-          if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
-              builtin cd -- "$cwd"
-          end
-          rm -f -- "$tmp"
-        '';
-      };
-    };
-
     completions = {
       bdcli = ''
         if command -sq bdcli

@@ -48,6 +48,10 @@
       url = "github:sahaj-b/ghostty-cursor-shaders";
       flake = false;
     };
+    yazi-flavors = {
+      url = "github:yazi-rs/flavors";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:

@@ -61,7 +61,6 @@
     wechat
     wget
     xdg-ninja
-    yazi
     zed-editor
     zsign
   ];
