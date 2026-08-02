@@ -50,9 +50,21 @@ in
 
       pull.rebase = true;
 
+      merge.conflictStyle = "zdiff3";
+
       init.defaultBranch = "master";
 
       push.autoSetupRemote =true;
+    };
+  };
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+
+    options = {
+      navigate = true;
+      line-numbers = true;
     };
   };
 }

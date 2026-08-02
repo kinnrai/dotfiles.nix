@@ -15,7 +15,6 @@
     cocoapods
     codex
     codexbar
-    delta
     discord
     drawio
     dust
