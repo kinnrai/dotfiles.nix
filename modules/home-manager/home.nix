@@ -4,6 +4,7 @@
   imports = [
     ./aerospace.nix
     ./atuin.nix
+    ./bat.nix
     ./direnv.nix
     ./environment.nix
     ./eza.nix

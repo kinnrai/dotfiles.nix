@@ -9,6 +9,7 @@
     enable = true;
 
     shellAbbrs = {
+      cat = "bat --paging=never";
       py = "python";
       vim = "nvim";
 

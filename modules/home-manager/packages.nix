@@ -5,7 +5,6 @@
     act
     apfel-llm
     asciinema
-    bat
     bruno
     bruno-cli
     blender
