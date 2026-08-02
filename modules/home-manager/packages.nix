@@ -11,7 +11,6 @@
     btop
     chafa
     chezmoi
-    chroma
     cocoapods
     codex
     codexbar
