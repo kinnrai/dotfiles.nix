@@ -55,22 +55,6 @@
         "type": "github"
       }
     },
-    "fish-magic-enter": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1744056988,
-        "narHash": "sha256-zDrc2d2VTeTiukRLeezlbj06ICr0AJId/iJx11xPKyo=",
-        "owner": "mattmc3",
-        "repo": "magic-enter.fish",
-        "rev": "ddcf5c2cf9ff90c15a724bcdd794a486098492e0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mattmc3",
-        "repo": "magic-enter.fish",
-        "type": "github"
-      }
-    },
     "fish-puffer": {
       "flake": false,
       "locked": {
@@ -364,7 +348,6 @@
       "inputs": {
         "direnv-instant": "direnv-instant",
         "fish-async-prompt": "fish-async-prompt",
-        "fish-magic-enter": "fish-magic-enter",
         "fish-puffer": "fish-puffer",
         "ghostty-cursor-shaders": "ghostty-cursor-shaders",
         "home-manager": "home-manager",

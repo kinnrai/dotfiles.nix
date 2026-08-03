@@ -11,7 +11,6 @@
     #
     # @see https://github.com/acomagu/fish-async-prompt/issues/74
     # @see https://github.com/acomagu/fish-async-prompt/issues/82
-    enableFishIntegration = true;
     enableInteractive = false;
 
     configPath = "${config.xdg.configHome}/starship/starship.toml";

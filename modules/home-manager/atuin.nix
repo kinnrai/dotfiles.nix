@@ -3,7 +3,6 @@
 {
   programs.atuin = {
     enable = true;
-    enableFishIntegration = true;
 
     forceOverwriteSettings = true;
 

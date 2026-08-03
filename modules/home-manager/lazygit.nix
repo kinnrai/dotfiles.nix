@@ -3,7 +3,6 @@
 {
   programs.lazygit = {
     enable = true;
-    enableFishIntegration = true;
 
     # User config of lazygit
     #

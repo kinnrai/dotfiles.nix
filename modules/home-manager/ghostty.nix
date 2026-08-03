@@ -23,7 +23,6 @@ in
       else
         pkgs.ghostty;
 
-    enableFishIntegration = true;
     installBatSyntax = true;
 
     # User config of ghostty

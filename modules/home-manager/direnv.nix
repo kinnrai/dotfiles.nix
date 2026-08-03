@@ -5,8 +5,6 @@
 
   programs.direnv = {
     enable = true;
-    # direnv-instant replaces the regular Fish hook.
-    # enableFishIntegration = true;
     nix-direnv.enable = true;
     config.global = {
       disable_stdin = true;

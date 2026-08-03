@@ -23,7 +23,6 @@ in
     enable = true;
     package = pkgs.yazi.override { _7zz = pkgs._7zz-rar; };
 
-    enableFishIntegration = true;
     shellWrapperName = "y";
 
     extraPackages = (with pkgs; [

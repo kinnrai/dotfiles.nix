@@ -42,7 +42,6 @@ in
 {
   programs.fzf = {
     enable = true;
-    enableFishIntegration = true;
 
     defaultOptions = [
       # Use the terminal's 16-color palette so fzf follows light and dark themes.

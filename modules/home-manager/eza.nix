@@ -3,7 +3,6 @@
 {
   programs.eza = {
     enable = true;
-    enableFishIntegration = true;
 
     # Command-line options of eza
     #
