@@ -39,38 +39,6 @@
         "type": "github"
       }
     },
-    "fish-async-prompt": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1767614852,
-        "narHash": "sha256-HWW9191RP//48HkAHOZ7kAAAPSBKZ+BW2FfCZB36Y+g=",
-        "owner": "acomagu",
-        "repo": "fish-async-prompt",
-        "rev": "b90e8a8c6d1634d8f04f1532b164b99530445159",
-        "type": "github"
-      },
-      "original": {
-        "owner": "acomagu",
-        "repo": "fish-async-prompt",
-        "type": "github"
-      }
-    },
-    "fish-puffer": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1763062131,
-        "narHash": "sha256-Dhx5+XRxJvlhdnFyimNxFyFiASrGU4ZwyefsDwtKnSg=",
-        "owner": "nickeb96",
-        "repo": "puffer-fish",
-        "rev": "83174b07de60078be79985ef6123d903329622b8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nickeb96",
-        "repo": "puffer-fish",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -347,8 +315,6 @@
     "root": {
       "inputs": {
         "direnv-instant": "direnv-instant",
-        "fish-async-prompt": "fish-async-prompt",
-        "fish-puffer": "fish-puffer",
         "ghostty-cursor-shaders": "ghostty-cursor-shaders",
         "home-manager": "home-manager",
         "homebrew-cask": "homebrew-cask",

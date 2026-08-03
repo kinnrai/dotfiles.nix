@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, ... }:
 {
   programs.fish = {
     enable = true;
@@ -6,11 +6,11 @@
     plugins = [
       {
         name = "async-prompt";
-        src = inputs.fish-async-prompt;
+        src = pkgs.fishPlugins.async-prompt.src;
       }
       {
         name = "puffer";
-        src = inputs.fish-puffer;
+        src = pkgs.fishPlugins.puffer.src;
       }
     ];
 

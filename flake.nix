@@ -32,14 +32,6 @@
       url = "github:rafaelswi/homebrew-menubarusb";
       flake = false;
     };
-    fish-async-prompt = {
-      url = "github:acomagu/fish-async-prompt";
-      flake = false;
-    };
-    fish-puffer = {
-      url = "github:nickeb96/puffer-fish";
-      flake = false;
-    };
     ghostty-cursor-shaders = {
       url = "github:sahaj-b/ghostty-cursor-shaders";
       flake = false;
