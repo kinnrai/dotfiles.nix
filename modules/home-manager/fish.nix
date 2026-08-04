@@ -45,10 +45,4 @@
       end
     '';
   };
-
-  # Fish loads conf.d before Home Manager's plugin loaders, so async-prompt sees
-  # this setting before it initializes. SIGUSR1 is reserved by direnv-instant.
-  xdg.configFile."fish/conf.d/00-plugin-options.fish".text = ''
-    set -g async_prompt_signal_number SIGUSR2
-  '';
 }

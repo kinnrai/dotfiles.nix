@@ -1,8 +1,6 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [ inputs.direnv-instant.homeModules.direnv-instant ];
-
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
@@ -25,6 +23,4 @@
       }
     '';
   };
-
-  programs.direnv-instant.enable = true;
 }
