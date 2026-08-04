@@ -41,6 +41,7 @@
   users.users.${primaryUser} = {
     name = primaryUser;
     home = userHome;
+    shell = pkgs.zsh;
   };
 
   # Set Git commit hash for darwin-version.
