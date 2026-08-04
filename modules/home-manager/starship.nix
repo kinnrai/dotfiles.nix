@@ -14,6 +14,10 @@
     enableInteractive = false;
 
     configPath = "${config.xdg.configHome}/starship/starship.toml";
-    settings.nix_shell.format = "via [$symbol( \\($name\\))]($style) ";
+    settings = {
+      nix_shell.format = "via [$symbol( \\($name\\))]($style) ";
+
+      shell.disabled = false;
+    };
   };
 }
