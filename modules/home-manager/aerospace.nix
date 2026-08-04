@@ -49,29 +49,15 @@
           alt-k = "focus up";
           alt-l = "focus right";
 
-          alt-left = "focus left";
-          alt-down = "focus down";
-          alt-up = "focus up";
-          alt-right = "focus right";
-
           alt-shift-h = "move left";
           alt-shift-j = "move down";
           alt-shift-k = "move up";
           alt-shift-l = "move right";
 
-          alt-shift-left = "move left";
-          alt-shift-down = "move down";
-          alt-shift-up = "move up";
-          alt-shift-right = "move right";
+          alt-shift-backslash = "split horizontal";
+          alt-shift-minus = "split vertical";
 
-          alt-g = "split horizontal";
-          alt-v = "split vertical";
-
-          alt-minus = "resize smart -50";
-          alt-equal = "resize smart +50";
-
-          alt-f = "fullscreen";
-          alt-shift-f = "macos-native-fullscreen";
+          alt-shift-f = "fullscreen";
 
           alt-1 = "workspace 1";
           alt-2 = "workspace 2";
@@ -99,7 +85,7 @@
           alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
 
           alt-shift-semicolon = "mode service";
-          alt-r = "mode resize";
+          alt-shift-r = "mode resize";
         };
 
         resize.binding = {

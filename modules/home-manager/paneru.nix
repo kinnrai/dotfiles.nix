@@ -14,24 +14,18 @@
         animation_speed = 12;
       };
 
-      swipe = {
-        gesture.fingers_count = 4;
-        scroll = {
-          modifier = "cmd + ctrl";
-          vertical_modifier = "alt";
-        };
-      };
+      swipe.gesture.fingers_count = 4;
 
       bindings = {
-        window_focus_west = [ "alt - h" "alt - leftarrow" ];
-        window_focus_east = [ "alt - l" "alt - rightarrow" ];
-        window_focus_north = [ "alt - k" "alt - uparrow" ];
-        window_focus_south = [ "alt - j" "alt - downarrow" ];
+        window_focus_west = "alt - h";
+        window_focus_east = "alt - l";
+        window_focus_north = "alt - k";
+        window_focus_south = "alt - j";
 
-        window_swap_west = [ "alt + shift - h" "alt + shift - leftarrow" ];
-        window_swap_east = [ "alt + shift - l" "alt + shift - rightarrow" ];
-        window_swap_north = [ "alt + shift - k" "alt + shift - uparrow" ];
-        window_swap_south = [ "alt + shift - j" "alt + shift - downarrow" ];
+        window_swap_west = "alt + shift - h";
+        window_swap_east = "alt + shift - l";
+        window_swap_north = "alt + shift - k";
+        window_swap_south = "alt + shift - j";
 
         window_virtualnum_1 = "alt - 1";
         window_virtualnum_2 = "alt - 2";
@@ -55,15 +49,15 @@
         window_virtualmovenum_9 = "alt + shift - 9";
         window_virtualmovenum_10 = "alt + shift - 0";
 
-        window_center = "alt - c";
-        window_resize = "alt - r";
-        window_fullwidth = "alt - f";
-        window_manage = "alt - t";
-        window_stack = "alt - [";
-        window_unstack = "alt - ]";
+        window_center = "alt + shift - c";
+        window_resize = "alt + shift - r";
+        window_fullwidth = "alt + shift - f";
+        window_manage = "alt + shift - t";
+        window_stack = "alt + shift - [";
+        window_unstack = "alt + shift - ]";
         window_togglefloatlayer = "alt - tab";
-        quit = "alt + shift - q";
-        restart = "alt + shift - r";
+        quit = "ctrl + alt + cmd - q";
+        restart = "ctrl + alt + cmd - r";
       };
 
       windows = {
