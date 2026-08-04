@@ -31,7 +31,10 @@
 
     interactiveShellInit = ''
       fish_config theme choose catppuccin-macchiato >/dev/null
-      set -g fish_key_bindings fish_vi_key_bindings
+
+      # fish-async-prompt renders Starship in a non-interactive child process.
+      # Export the binding mode so that child can preserve vi mode in the prompt.
+      set -gx fish_key_bindings fish_vi_key_bindings
     '';
 
     shellInitLast = ''
