@@ -1,0 +1,132 @@
+diff --git a/Library/Homebrew/items.sh b/Library/Homebrew/items.sh
+index 121754e..70a7946 100644
+--- a/Library/Homebrew/items.sh
++++ b/Library/Homebrew/items.sh
+@@ -178,14 +178,14 @@ homebrew-items-paths() {
+   # shellcheck disable=SC2154
+   if [[ -n "${HOMEBREW_MACOS}" ]]
+   then
+-    find_args=("-E" "${HOMEBREW_REPOSITORY}/Library/Taps")
++    find_args=("-E" "-L" "${HOMEBREW_LIBRARY}/Taps")
+   else
+-    find_args=("${HOMEBREW_REPOSITORY}/Library/Taps" "-regextype" "posix-extended")
++    find_args=("-L" "${HOMEBREW_LIBRARY}/Taps" "-regextype" "posix-extended")
+   fi
+-
++
+-  # HOMEBREW_REPOSITORY is set by brew.sh
++  # HOMEBREW_LIBRARY is set by bin/brew
+   # shellcheck disable=SC2154
+-  [[ -d "${HOMEBREW_REPOSITORY}/Library/Taps" ]] || return
++  [[ -d "${HOMEBREW_LIBRARY}/Taps" ]] || return
+   find "${find_args[@]}" \
+     -type d \( \
+     -regex "${find_exclude_filter}" -o \
+diff --git a/Library/Homebrew/cmd/casks.sh b/Library/Homebrew/cmd/casks.sh
+index 97ec7aa..aa07d93 100644
+--- a/Library/Homebrew/cmd/casks.sh
++++ b/Library/Homebrew/cmd/casks.sh
+@@ -8,6 +8,13 @@ homebrew-casks() {
+   local sed_filter='s|/Casks/(.+/)?|/|'
+   local grep_filter='^homebrew/cask'
+-
++
++  # Name completion is read-only; avoid expensive trust metadata resolution.
++  if [[ -n "${HOMEBREW_COMPLETION:-}" ]]
++  then
++    homebrew-items "${find_include_filter}" '^\b$' "${sed_filter}" "${grep_filter}"
++    return
++  fi
++
+   if homebrew-tap-trust-required
+   then
+     if homebrew-trusted-items-with-api-names "${find_include_filter}" '^\b$' \
+diff --git a/Library/Homebrew/cmd/formulae.sh b/Library/Homebrew/cmd/formulae.sh
+index c37cb5e..2f8d6bd 100644
+--- a/Library/Homebrew/cmd/formulae.sh
++++ b/Library/Homebrew/cmd/formulae.sh
+@@ -8,6 +8,13 @@ homebrew-formulae() {
+   local sed_filter='s|/Formula/(.+/)?|/|'
+   local grep_filter='^homebrew/core'
+-
++
++  # Name completion is read-only; avoid expensive trust metadata resolution.
++  if [[ -n "${HOMEBREW_COMPLETION:-}" ]]
++  then
++    homebrew-items "${find_include_filter}" '.*Casks(/.*|$)' "${sed_filter}" "${grep_filter}"
++    return
++  fi
++
+   if homebrew-tap-trust-required
+   then
+     if homebrew-trusted-items-with-api-names "${find_include_filter}" '.*Casks(/.*|$)' \
+diff --git a/completions/bash/brew b/completions/bash/brew
+index 925571f..5fdac01 100644
+--- a/completions/bash/brew
++++ b/completions/bash/brew
+@@ -80,8 +80,9 @@ __brew_complete_outdated_casks() {
+ }
+-
++
+ __brew_complete_tapped() {
+-  local dir taps taplib
+-  taplib=${HOMEBREW_REPOSITORY:-$(brew --repository)}/Library/Taps
++  local dir library taps taplib
++  library=${HOMEBREW_REPOSITORY:-$(brew --repository)}
++  taplib=${library%/*}/Taps
+-
++
+   for dir in "${taplib}"/*/*
+   do
+@@ -99,16 +100,17 @@ __brew_complete_commands() {
+   local cur="${COMP_WORDS[COMP_CWORD]}"
+   local cmds
++  local library=${HOMEBREW_REPOSITORY:-$(brew --repository)}
+   local maintainer_cmds
+   local user_aliases
+-
++
+   if [[ -n ${__HOMEBREW_COMMANDS} ]]
+   then
+     cmds=${__HOMEBREW_COMMANDS}
+   elif [[ -n ${HOMEBREW_CACHE:-} && -f ${HOMEBREW_CACHE}/all_commands_list.txt ]]
+   then
+     cmds="$(< "${HOMEBREW_CACHE}/all_commands_list.txt")"
+-  elif [[ -n ${HOMEBREW_REPOSITORY:-} && -f ${HOMEBREW_REPOSITORY}/completions/internal_commands_list.txt ]]
++  elif [[ -f ${library%/*}/Homebrew/../../completions/internal_commands_list.txt ]]
+   then
+-    cmds="$(< "${HOMEBREW_REPOSITORY}/completions/internal_commands_list.txt")"
++    cmds="$(< "${library%/*}/Homebrew/../../completions/internal_commands_list.txt")"
+   fi
+   if [[ -n ${HOMEBREW_DEVELOPER:-} ]]
+   then
+diff --git a/completions/fish/brew.fish b/completions/fish/brew.fish
+index 9e77c44..3862ba4 100644
+--- a/completions/fish/brew.fish
++++ b/completions/fish/brew.fish
+@@ -172,9 +172,10 @@ function __fish_brew_suggest_casks_outdated -d "Lists outdated casks"
+ end
+-
++
+ function __fish_brew_suggest_taps_installed -d "List all available taps"
+-    command find (brew --repo)/Library/Taps -mindepth 2 -maxdepth 2 -type d \
++    set -l library (command dirname (brew --repo))
++    command find -L $library/Taps -mindepth 2 -maxdepth 2 -type d \
+-    | string replace homebrew- "" \
+-    | string replace (brew --repo)/Library/Taps/ ""
++    | string replace $library/Taps/ "" \
++    | string replace homebrew- ""
+ end
+-
++
+ function __fish_brew_suggest_aliases -d "Lists user-defined aliases"
+@@ -202,7 +203,8 @@ function __fish_brew_suggest_commands -d "Lists all command names"
+     if test -f (brew --cache)/all_commands_list.txt
+         set commands (cat (brew --cache)/all_commands_list.txt)
+     else
+-        set commands (cat (brew --repo)/completions/internal_commands_list.txt)
++        set -l library (command dirname (brew --repo))
++        set commands (cat $library/Homebrew/../../completions/internal_commands_list.txt)
+     end
+     for command in $commands
+         set -l expanded_command (__fish_brew_expand_alias $command)

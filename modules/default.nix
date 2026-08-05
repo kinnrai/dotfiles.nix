@@ -17,6 +17,8 @@
   nix.settings.experimental-features = "nix-command flakes";
 
   # Enable alternative shell support in nix-darwin.
+  programs.bash.completion.enable = true;
+
   programs.fish = {
     enable = true;
     useBabelfish = true;
