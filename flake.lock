@@ -58,11 +58,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785531816,
-        "narHash": "sha256-vkMnV0JIyw+g/NmcfoajlGaAO+9a0ezia+FZohQJrik=",
+        "lastModified": 1786031233,
+        "narHash": "sha256-TIDlLTLI1/pB7IqgjzcKQjpODQsZE2oII4XGG9B6KjI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "bf9ce9fec78f95f374e8dd3b503863a3ec128ebe",
+        "rev": "7834e82588860aaf780cec1366524456a70898d7",
         "type": "github"
       },
       "original": {
@@ -74,11 +74,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1785751389,
-        "narHash": "sha256-x1hAZvH4LHHjghK8r6r/1WGET+X+/7ZWPCVwv03pf9A=",
+        "lastModified": 1786111970,
+        "narHash": "sha256-Ny1WZU6xOtr20vi8MgLGJfqheX1QMj7LhRT19qBKEZw=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "7ff60c261592579a18d69bb6afc4f8771b78cebd",
+        "rev": "235949fba4094143cb615f8f3977dad35b1ee51c",
         "type": "github"
       },
       "original": {
@@ -90,11 +90,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1785749031,
-        "narHash": "sha256-UcaRpvWt/Wup4H8pqfOcE4hIbe8YkrSMDSu48Llgv08=",
+        "lastModified": 1786114338,
+        "narHash": "sha256-+o5AShLz4rgQP0pQULMdWPw52pN2rRSqw5l+QpdHUZs=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "f68bb1db386de4b08eba3fdc83cde4426a116406",
+        "rev": "19d8decfcd01c44b8c8616f2fc1c4b03817d3ae0",
         "type": "github"
       },
       "original": {
@@ -256,11 +256,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785255875,
-        "narHash": "sha256-D0DGI/+nrVA3Ydk+g0eCzAU0Gw+pDA8IBRT/IcCN+DI=",
+        "lastModified": 1785955631,
+        "narHash": "sha256-hjVt/FK1jqKI8N4A+R4ahdRYy99aKSD0JcohEXQA3JI=",
         "ref": "refs/heads/main",
-        "rev": "500563b93db47046c4c34f8873d9a576b01e33a4",
-        "revCount": 774,
+        "rev": "43ed3393c2be7d8372ed71c7bc76fd149cd2984d",
+        "revCount": 788,
         "type": "git",
         "url": "https://github.com/karinushka/paneru.git"
       },
@@ -287,11 +287,11 @@
     "yazi-flavors": {
       "flake": false,
       "locked": {
-        "lastModified": 1785237721,
-        "narHash": "sha256-rEoCpbb1wmvzJJXtQ6dDkBIUw/W3VWwJGBkjWhYTgYk=",
+        "lastModified": 1786094737,
+        "narHash": "sha256-Dy73TfcrcbCXY9lwDszNgAKLiCAHf1KIwC4Q5U6k21E=",
         "owner": "yazi-rs",
         "repo": "flavors",
-        "rev": "1a5f7877c770ff4db380b0b78e0e1a2cb4206103",
+        "rev": "be0b21d0873092a63946cc2678dd700aac945902",
         "type": "github"
       },
       "original": {
