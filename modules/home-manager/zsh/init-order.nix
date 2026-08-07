@@ -12,6 +12,7 @@
   # Install completion frontends after compinit and before Home Manager loads
   # zsh-autosuggestions (700); fzf-tab must wrap the Fzf widgets last.
   fzfWidgets = lib.mkOrder 580;
+  completionOverrides = lib.mkOrder 590;
   fzfTab = lib.mkOrder 600;
   editingFixups = lib.mkOrder 610;
 
