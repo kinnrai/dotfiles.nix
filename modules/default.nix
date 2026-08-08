@@ -24,8 +24,19 @@
     useBabelfish = true;
   };
 
-  # Allow the nix-darwin fish path to be used as a login shell.
-  environment.shells = [ pkgs.fish ];
+  # Home Manager owns the user-level zsh prompt and completion setup.
+  programs.zsh = {
+    enable = true;
+    enableBashCompletion = false;
+    enableGlobalCompInit = false;
+    promptInit = "";
+  };
+
+  # Allow the nix-darwin shell paths to be used as login shells.
+  environment.shells = with pkgs; [
+    fish
+    zsh
+  ];
 
   users.users.${primaryUser} = {
     name = primaryUser;

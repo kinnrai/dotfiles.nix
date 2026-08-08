@@ -25,6 +25,7 @@
     ./xdg.nix
     ./zellij
     ./zoxide.nix
+    ./zsh
   ];
 
   # This value determines the Home Manager release that your

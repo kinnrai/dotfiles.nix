@@ -15,6 +15,9 @@ in
   programs.fzf = {
     enable = true;
 
+    # zsh/fzf.nix loads the integration at an explicit ZLE initialization phase.
+    enableZshIntegration = false;
+
     defaultOptions = [
       # Use the terminal's 16-color palette so fzf follows light and dark themes.
       "--color=base16"
@@ -32,7 +35,10 @@ in
     fileWidget.options = previewOptions;
     changeDirWidget.options = previewOptions;
 
-    # Let Atuin own Ctrl-R for fish history search.
-    historyWidget.fish.command = "";
+    # Let Atuin own Ctrl-R for shell history search.
+    historyWidget = {
+      fish.command = "";
+      zsh.command = "";
+    };
   };
 }
