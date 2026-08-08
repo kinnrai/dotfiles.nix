@@ -8,7 +8,7 @@
     ./core.nix
     ./editing.nix
     ./fzf.nix
-    ./fzf-tab.nix
+    ./fzf-tab
     ./syntax-highlighting.nix
   ];
 
