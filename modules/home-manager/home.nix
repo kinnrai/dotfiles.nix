@@ -9,7 +9,7 @@
     ./environment.nix
     ./eza.nix
     ./fish.nix
-    ./fzf.nix
+    ./fzf
     ./ghostty.nix
     ./git.nix
     ./lazygit.nix
