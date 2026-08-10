@@ -75,11 +75,12 @@ in
         zstyle ':completion:*' cache-path "${completionCache}"
       '')
 
-      # Merge SSH config aliases with the hosts collected by the upstream
-      # completion instead of letting its first successful source win.
-      (initOrder.completionOverrides (
-        builtins.readFile ./completion/ssh-hosts.zsh
-      ))
+      # Correct upstream completion behavior after compinit has registered its
+      # functions, but before fzf-tab starts consuming their contexts.
+      (initOrder.completionOverrides ''
+        ${builtins.readFile ./completion/ssh-hosts.zsh}
+        ${builtins.readFile ./completion/otool.zsh}
+      '')
 
       # Refresh completions after tools such as direnv and nix develop update
       # XDG_DATA_DIRS or fpath. Keep normal compinit security checks enabled.
