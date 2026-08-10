@@ -15,6 +15,7 @@
   "PicOne" = 6778935489;
   "Refined GitHub" = 1519867270;
   "SenPlayer" = 6443975850;
+  "Shadowrocket" = 932747118;
   "Tampermonkey" = 6738342400;
   "TransOne" = 6781136563;
   "Trancy ET- AI Translator" = 6475386403;
