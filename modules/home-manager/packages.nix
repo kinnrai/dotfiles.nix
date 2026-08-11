@@ -44,11 +44,7 @@
     nh
     nixpkgs-review
     nmap
-    (obsidian.overrideAttrs (old: {
-      # TODO: Remove once the upstream Darwin fix lands:
-      # https://github.com/NixOS/nixpkgs/pull/548462
-      sourceRoot = "Obsidian ${old.version}-universal/Obsidian.app";
-    }))
+    obsidian
     orbstack
     pandoc
     payload-dumper-go
