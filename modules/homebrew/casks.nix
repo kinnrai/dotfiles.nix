@@ -6,7 +6,6 @@
   "chatgpt"
   "chatgpt-classic"
   "comfy"
-  "crossover"
   "es-de"
   "excalidrawz"
   "flowvision"
