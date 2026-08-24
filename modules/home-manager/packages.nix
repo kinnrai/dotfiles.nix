@@ -57,6 +57,7 @@
     smartmontools
     socat
     stats
+    texliveFull
     tree
     wechat
     wget
