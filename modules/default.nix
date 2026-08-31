@@ -8,18 +8,6 @@
     ./homebrew/nix-homebrew.nix
   ];
 
-  # TODO: Remove after nixpkgs fixes Alembic 1.8.12 on Darwin.
-  # https://github.com/NixOS/nixpkgs/pull/450978
-  nixpkgs.overlays = [
-    (_final: prev: {
-      alembic = prev.alembic.overrideAttrs (oldAttrs: {
-        cmakeFlags = (oldAttrs.cmakeFlags or [ ]) ++ [
-          "-DCMAKE_INSTALL_RPATH=${builtins.placeholder "lib"}/lib"
-        ];
-      });
-    })
-  ];
-
   security.pam.services.sudo_local = {
     touchIdAuth = true;
     reattach = true;
