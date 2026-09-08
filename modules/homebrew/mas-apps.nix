@@ -2,6 +2,7 @@
   "AdGuard Mini" = 1440147259;
   "AndroMeld" = 6762439757;
   "Bitwarden" = 1352778147;
+  "Clash" = 6794257189;
   "Control Panel for Twitter" = 1668516167;
   "Control Panel for YouTube" = 6478456678;
   "CotEditor" = 1024640650;
