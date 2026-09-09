@@ -1,8 +1,8 @@
 { pkgs }:
 
-if pkgs.stdenv.isDarwin then
+if pkgs.stdenv.hostPlatform.isDarwin then
   import ./darwin.nix { inherit pkgs; }
-else if pkgs.stdenv.isLinux then
+else if pkgs.stdenv.hostPlatform.isLinux then
   import ./linux.nix { inherit pkgs; }
 else
   {
