@@ -4,8 +4,7 @@
   programs.aerospace = {
     enable = true;
 
-    # Paneru is the default window manager.
-    launchd.enable = false;
+    launchd.enable = true;
 
     settings = {
       config-version = 2;

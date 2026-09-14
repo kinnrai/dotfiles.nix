@@ -4,7 +4,8 @@
   imports = [ inputs.paneru.homeModules.paneru ];
 
   services.paneru = {
-    enable = true;
+    # AeroSpace is the default window manager.
+    enable = false;
 
     settings = {
       options = {
