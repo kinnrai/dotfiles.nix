@@ -28,6 +28,10 @@
       url = "github:rafaelswi/homebrew-menubarusb";
       flake = false;
     };
+    homebrew-abue-ammar-tinycast = {
+      url = "github:abue-ammar/homebrew-tinycast";
+      flake = false;
+    };
     ghostty-cursor-shaders = {
       url = "github:sahaj-b/ghostty-cursor-shaders";
       flake = false;

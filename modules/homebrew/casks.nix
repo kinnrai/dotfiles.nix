@@ -1,4 +1,5 @@
 [
+  "abue-ammar/tinycast/tinycast"
   "android-studio"
   "baidunetdisk"
   "blackhole-2ch"
@@ -21,7 +22,6 @@
   "obs"
   "qlmarkdown"
   "quicklook-video"
-  "raycast"
   "retroarch-metal"
   "sf-symbols"
   "silicon-app"
