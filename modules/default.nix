@@ -8,7 +8,10 @@
     ./homebrew/nix-homebrew.nix
   ];
 
-  nixpkgs.overlays = [ (import ../overlays/pycharm.nix) ];
+  nixpkgs.overlays = [
+    (import ../overlays/pycharm.nix)
+    (import ../overlays/sketchybar)
+  ];
 
   security.pam.services.sudo_local = {
     touchIdAuth = true;
