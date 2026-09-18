@@ -1,0 +1,65 @@
+Subject: Respect the visible menu bar when positioning vertical bars
+
+Tahoe can omit the external display menu bar from NSScreen.visibleFrame.
+Use the actual on-screen menu window bounds for vertical bars, including
+when topmost is enabled. Horizontal bar placement is unchanged.
+
+TODO: Remove after upstream handles this geometry and the replacement is
+verified with the native menu bar on both built-in and external displays.
+
+diff --git a/src/bar.c b/src/bar.c
+index 88df424..c0b0ced 100644
+--- a/src/bar.c
++++ b/src/bar.c
+@@ -434,6 +434,36 @@ void bar_calculate_bounds(struct bar* bar) {
+   }
+ }
+
++// NSScreen.visibleFrame can omit a secondary screen's menu bar on Tahoe.
++// Match the actual on-screen menu-bar window in CoreGraphics coordinates.
++static CGFloat bar_visible_menu_height(uint32_t did, CGRect screen) {
++  CGFloat height = display_menu_bar_rect(did).size.height;
++  CFArrayRef windows = CGWindowListCopyWindowInfo(
++    kCGWindowListOptionOnScreenOnly | kCGWindowListExcludeDesktopElements,
++    kCGNullWindowID);
++  if (!windows) return height;
++
++  for (CFIndex i = 0; i < CFArrayGetCount(windows); i++) {
++    CFDictionaryRef window = CFArrayGetValueAtIndex(windows, i);
++    CFNumberRef layer = CFDictionaryGetValue(window, kCGWindowLayer);
++    int level = 0;
++    if (!layer || !CFNumberGetValue(layer, kCFNumberIntType, &level)
++        || level != CGWindowLevelForKey(kCGMainMenuWindowLevelKey)) continue;
++    CFDictionaryRef bounds = CFDictionaryGetValue(window, kCGWindowBounds);
++    CGRect rect;
++    if (!bounds || !CGRectMakeWithDictionaryRepresentation(bounds, &rect)) continue;
++    if (fabs(rect.origin.x - screen.origin.x) < 1
++        && fabs(rect.origin.y - screen.origin.y) < 1
++        && fabs(rect.size.width - screen.size.width) < 1
++        && rect.size.height > 0 && rect.size.height < 100) {
++      height = rect.size.height;
++      break;
++    }
++  }
++  CFRelease(windows);
++  return height;
++}
++
+ static CGRect bar_get_frame(struct bar *bar) {
+   bool is_builtin = CGDisplayIsBuiltin(bar->did);
+   int notch_offset = is_builtin ? g_bar_manager.notch_offset : 0;
+@@ -455,10 +485,10 @@ static CGRect bar_get_frame(struct bar *bar) {
+
+     origin.y += g_bar_manager.background.y_offset;
+
+-    if (display_menu_bar_visible() && !g_bar_manager.topmost) {
+-      CGRect menu = display_menu_bar_rect(bar->did);
+-      origin.y += menu.size.height;
+-      bounds.size.height -= menu.size.height;
++    if (display_menu_bar_visible()) {
++      CGFloat menu_height = bar_visible_menu_height(bar->did, display_bounds(bar->did));
++      origin.y += menu_height;
++      bounds.size.height -= menu_height;
+     }
+
+     return (CGRect) {{origin.x, origin.y},
