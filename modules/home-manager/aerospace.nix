@@ -29,12 +29,10 @@
       gaps = {
         inner.horizontal = 10;
         inner.vertical = 10;
-        outer.left = 8;
+        # Reserve 78 pt for the left-side SketchyBar: 8 margin + 60 bar + 10 gap.
+        outer.left = 78;
         outer.bottom = 8;
-        outer.top = [
-          { monitor.main = 8; }
-          40
-        ];
+        outer.top = 8;
         outer.right = 8;
       };
 
