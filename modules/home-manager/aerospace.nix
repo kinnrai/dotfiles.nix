@@ -30,11 +30,9 @@
         inner.horizontal = 10;
         inner.vertical = 10;
         outer.left = 8;
-        outer.bottom = 8;
-        outer.top = [
-          { monitor.main = 8; }
-          40
-        ];
+        # Reserve space for SketchyBar: 40 bar + 8 outer gap.
+        outer.bottom = 48;
+        outer.top = 8;
         outer.right = 8;
       };
 
