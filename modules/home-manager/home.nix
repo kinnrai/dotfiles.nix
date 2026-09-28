@@ -24,6 +24,7 @@
     ./toolchains.nix
     ./xdg.nix
     ./zellij
+    ./zen-browser.nix
     ./zoxide.nix
     ./zsh
   ];
