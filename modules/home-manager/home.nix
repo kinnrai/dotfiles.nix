@@ -14,6 +14,7 @@
     ./git.nix
     ./lazygit.nix
     ./mise.nix
+    ./neovim.nix
     ./nix-index.nix
     ./packages.nix
     ./paneru.nix
