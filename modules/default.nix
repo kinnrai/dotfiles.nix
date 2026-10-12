@@ -17,6 +17,12 @@
   nix.settings.experimental-features = "nix-command flakes";
   nix.settings.sandbox = "relaxed";
 
+  nix.gc = {
+    automatic = true;
+    interval = [{ Weekday = 7; Hour = 3; Minute = 15; }];
+    options = "--delete-older-than 30d";
+  };
+
   # Enable alternative shell support in nix-darwin.
   programs.bash.completion.enable = true;
 
