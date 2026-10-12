@@ -50,12 +50,14 @@ in
       "homebrew/homebrew-cask" = inputs.homebrew-cask;
       "rafaelswi/homebrew-menubarusb" = inputs.homebrew-rafaelswi-menubarusb;
       "abue-ammar/homebrew-tinycast" = inputs.homebrew-abue-ammar-tinycast;
+      "notprotonnot/homebrew-notproton" = inputs.homebrew-notproton;
     };
 
     trust = {
       casks = [
         "rafaelswi/menubarusb/menubarusb"
         "abue-ammar/tinycast/tinycast"
+        "notprotonnot/notproton/notproton"
       ];
     };
   };

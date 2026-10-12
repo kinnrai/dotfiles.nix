@@ -37,6 +37,10 @@
       url = "github:abue-ammar/homebrew-tinycast";
       flake = false;
     };
+    homebrew-notproton = {
+      url = "github:NotProtonNot/homebrew-notproton";
+      flake = false;
+    };
     ghostty-cursor-shaders = {
       url = "github:sahaj-b/ghostty-cursor-shaders";
       flake = false;

@@ -19,6 +19,7 @@
   "kekaexternalhelper"
   "menubarusb"
   "neteasemusic"
+  "notprotonnot/notproton/notproton"
   "obs"
   "quicklook-video"
   "retroarch-metal"

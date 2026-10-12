@@ -134,6 +134,22 @@
         "type": "github"
       }
     },
+    "homebrew-notproton": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791745233,
+        "narHash": "sha256-9FXD0SxRq6ueCnKB2rnSFgURE7dRaHkHxgJrfOFq/J0=",
+        "owner": "NotProtonNot",
+        "repo": "homebrew-notproton",
+        "rev": "de49b5c4174bdcdd1b4f054e41c9bdb3ca470d2b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NotProtonNot",
+        "repo": "homebrew-notproton",
+        "type": "github"
+      }
+    },
     "homebrew-rafaelswi-menubarusb": {
       "flake": false,
       "locked": {
@@ -308,6 +324,7 @@
         "homebrew-abue-ammar-tinycast": "homebrew-abue-ammar-tinycast",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "homebrew-notproton": "homebrew-notproton",
         "homebrew-rafaelswi-menubarusb": "homebrew-rafaelswi-menubarusb",
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
