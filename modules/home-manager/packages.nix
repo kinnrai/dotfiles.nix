@@ -49,6 +49,7 @@
     payload-dumper-go
     pinentry_mac
     python3Packages.huggingface-hub
+    qlmarkdown
     qq
     rsync
     shell-gpt
@@ -56,6 +57,7 @@
     smartmontools
     socat
     stats
+    syntax-highlight
     texliveFull
     tree
     wechat
