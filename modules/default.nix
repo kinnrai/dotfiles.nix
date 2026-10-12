@@ -15,6 +15,7 @@
 
   # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
+  nix.settings.sandbox = "relaxed";
 
   # Enable alternative shell support in nix-darwin.
   programs.bash.completion.enable = true;
