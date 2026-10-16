@@ -89,11 +89,11 @@
     "homebrew-abue-ammar-tinycast": {
       "flake": false,
       "locked": {
-        "lastModified": 1791646289,
-        "narHash": "sha256-GSG018gaRrzd0iycO3cM2rNPpamTXwt1Z5AlQG/kcZo=",
+        "lastModified": 1792103255,
+        "narHash": "sha256-7VIHQx1YKz/ekU7KZGLSAbHl9jNP5rGQZZMEUijCYRc=",
         "owner": "abue-ammar",
         "repo": "homebrew-tinycast",
-        "rev": "3a9a0fa4de664a0aa2b34880e71626dd55309a38",
+        "rev": "3cf93e50e7ba7e3f886df98388a7e6683bad172e",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1791707716,
-        "narHash": "sha256-TgTIQ0ZzKpoQ800DXW+MO/i6RmHkwQd2nICSnxB11B0=",
+        "lastModified": 1792149800,
+        "narHash": "sha256-xignofyTnr5rn+g66aYqcjCTWWU/iGI0doRLPkg84jo=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "53dca07d3c8993e18edf8cbaecf162eeccb6aa6c",
+        "rev": "dfa4b6802ae1f47e2954271e3e0922ab269ebc69",
         "type": "github"
       },
       "original": {
@@ -121,11 +121,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1791711113,
-        "narHash": "sha256-D4JBfDWB1ygWjI8HWVgkRebhAiRajapouLuXupV3BNA=",
+        "lastModified": 1792152856,
+        "narHash": "sha256-Q1aQK/UuenZ2TqO2v39wpQFFK7VoYxJ3/zFaCMxMdX4=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "f6f65b2a310c66f0f354615afea72349fa6db43a",
+        "rev": "46271045e6d88445d8142d619152fefd19387837",
         "type": "github"
       },
       "original": {
@@ -137,11 +137,11 @@
     "homebrew-notproton": {
       "flake": false,
       "locked": {
-        "lastModified": 1791745233,
-        "narHash": "sha256-9FXD0SxRq6ueCnKB2rnSFgURE7dRaHkHxgJrfOFq/J0=",
+        "lastModified": 1792112556,
+        "narHash": "sha256-fxF3pmcQ7t9fKBGMWg+eNDa0fTzxsEwHJVRaUWTRL6k=",
         "owner": "NotProtonNot",
         "repo": "homebrew-notproton",
-        "rev": "de49b5c4174bdcdd1b4f054e41c9bdb3ca470d2b",
+        "rev": "934f8680f0372e03247363aaf99e7a0086aa0265",
         "type": "github"
       },
       "original": {
@@ -304,11 +304,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791215521,
-        "narHash": "sha256-iOuytQVx73ST5eZQo5PHwaihptazYfSNuQqoBkgBmQs=",
+        "lastModified": 1791712395,
+        "narHash": "sha256-/cJcZrxEaGF/EJCXt7aNOXUXbDzTBxve9uv/WHzRufM=",
         "ref": "refs/heads/main",
-        "rev": "a3cdcdca37295a0110edb0e5f35b9ace2f2fa727",
-        "revCount": 928,
+        "rev": "dcb98f376965c4366962d38a25c4369a9e8c06ec",
+        "revCount": 936,
         "type": "git",
         "url": "https://github.com/karinushka/paneru.git"
       },
@@ -361,11 +361,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791629930,
-        "narHash": "sha256-djG2tdpl/U+8eUmlozsRTRoU2yIvh8r1z8qj8gB/qWM=",
+        "lastModified": 1792047775,
+        "narHash": "sha256-Ks46+ZukSOvdgmextucbLykzpAmygNZ2I+HWxCe03ok=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "1fd1ee43a0fd0bff17a8ba07e2a281406a92991f",
+        "rev": "9342d127aa8c585e82f3f57ddb25800fd546029f",
         "type": "github"
       },
       "original": {
