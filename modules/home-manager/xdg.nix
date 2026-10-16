@@ -8,6 +8,14 @@
   xdg.localBinInPath = true;
   home.preferXdgDirectories = true;
 
+  # Share Homebrew's trust store with nix-homebrew activation, which drops XDG.
+  # TODO: Remove this workaround once nix-homebrew respects the XDG directory.
+  # https://github.com/zhaofengli/nix-homebrew/issues/161
+  home.file.".homebrew" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/homebrew";
+    force = true;
+  };
+
   # Programs that do not natively honour XDG but expose a directory override.
   home.sessionVariables = {
     # Configuration
