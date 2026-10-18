@@ -18,7 +18,6 @@
     ./nix-index.nix
     ./packages.nix
     ./paneru.nix
-    ./sketchybar.nix
     ./starship.nix
     ./tmux
     ./yazi
