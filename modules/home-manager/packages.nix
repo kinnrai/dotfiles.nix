@@ -39,7 +39,7 @@
     mas
     mihomo
     mkvtoolnix-cli
-    motrix-next
+    rayburst
     nh
     nixpkgs-review
     nmap
