@@ -11,6 +11,7 @@
       gui.showNumstatInFilesView = true;
       gui.nerdFontsVersion = "3";
       git.autoFetch = false;
+      promptToReturnFromSubprocess = false;
       quitOnTopLevelReturn = true;
     };
   };
