@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./1password.nix
     ./aerospace.nix
     ./atuin.nix
     ./bat.nix

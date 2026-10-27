@@ -7,6 +7,10 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    _1password-shell-plugins = {
+      url = "github:1Password/shell-plugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
