@@ -42,6 +42,7 @@ in
       };
 
       gpg.ssh.allowedSignersFile = "${userHome}/.ssh/allowed_signers";
+      gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
 
       commit = {
         gpgSign = true;
