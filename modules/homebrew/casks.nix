@@ -1,4 +1,10 @@
 [
+  # 1Password must be installed in /Applications.
+  # https://www.1password.community/1password-at-home-31/cannot-run-1password-from-applications-2906
+  {
+    name = "1password";
+    args.appdir = "/Applications";
+  }
   "abue-ammar/tinycast/tinycast"
   "android-studio"
   "baidunetdisk"
