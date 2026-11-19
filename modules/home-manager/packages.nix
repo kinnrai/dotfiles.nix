@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     act
-    apfel-llm
     asciinema
     bruno
     bruno-cli
