@@ -26,7 +26,9 @@
     httpie
     iina
     imhex
-    jetbrains.clion
+    # Re-enable once nixpkgs ships CLion 2026.3.0.1 or later.
+    # https://github.com/NixOS/nixpkgs/issues/590447
+    # jetbrains.clion
     jetbrains.goland
     jetbrains.idea
     jetbrains.pycharm
