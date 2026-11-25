@@ -37,10 +37,6 @@
       url = "github:rafaelswi/homebrew-menubarusb";
       flake = false;
     };
-    homebrew-abue-ammar-tinycast = {
-      url = "github:abue-ammar/homebrew-tinycast";
-      flake = false;
-    };
     homebrew-notproton = {
       url = "github:NotProtonNot/homebrew-notproton";
       flake = false;

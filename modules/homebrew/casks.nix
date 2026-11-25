@@ -5,7 +5,6 @@
     name = "1password";
     args.appdir = "/Applications";
   }
-  "abue-ammar/tinycast/tinycast"
   "android-studio"
   "baidunetdisk"
   "blackhole-2ch"
@@ -37,5 +36,6 @@
   "telegram"
   "tencent-meeting"
   "thunder"
+  "tinycast"
   "visual-studio-code"
 ]
