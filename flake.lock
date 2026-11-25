@@ -155,22 +155,6 @@
         "type": "github"
       }
     },
-    "homebrew-rafaelswi-menubarusb": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1781127741,
-        "narHash": "sha256-lvWDySL02H0aD0qZu1esbBYrCK3chTDbmC303a+4tZ0=",
-        "owner": "rafaelswi",
-        "repo": "homebrew-menubarusb",
-        "rev": "4cda66178583e693900fd28a1c0cea7526fbb1ed",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rafaelswi",
-        "repo": "homebrew-menubarusb",
-        "type": "github"
-      }
-    },
     "import-tree": {
       "locked": {
         "lastModified": 1784254960,
@@ -330,7 +314,6 @@
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
         "homebrew-notproton": "homebrew-notproton",
-        "homebrew-rafaelswi-menubarusb": "homebrew-rafaelswi-menubarusb",
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
         "nix-index-database": "nix-index-database",

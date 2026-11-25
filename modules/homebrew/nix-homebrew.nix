@@ -48,13 +48,11 @@ in
     taps = {
       "homebrew/homebrew-core" = inputs.homebrew-core;
       "homebrew/homebrew-cask" = inputs.homebrew-cask;
-      "rafaelswi/homebrew-menubarusb" = inputs.homebrew-rafaelswi-menubarusb;
       "notprotonnot/homebrew-notproton" = inputs.homebrew-notproton;
     };
 
     trust = {
       casks = [
-        "rafaelswi/menubarusb/menubarusb"
         "notprotonnot/notproton/notproton"
       ];
     };

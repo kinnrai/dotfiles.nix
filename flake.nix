@@ -33,10 +33,6 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-    homebrew-rafaelswi-menubarusb = {
-      url = "github:rafaelswi/homebrew-menubarusb";
-      flake = false;
-    };
     homebrew-notproton = {
       url = "github:NotProtonNot/homebrew-notproton";
       flake = false;
